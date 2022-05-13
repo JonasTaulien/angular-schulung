@@ -1,0 +1,9 @@
+<div class="text-input">
+  <label class="text-input__label">
+    {{ label }}
+    <input class="text-input__input"
+           type="text"
+           [ngModel]="value"
+           (ngModelChange)="valueChange.emit($event)">
+  </label>
+</div>

@@ -1,9 +1,5 @@
-<label>
-  Eingabe:
-
-  <input [(ngModel)]="value"
-         type="text">
-</label>
+<app-text-input label="Neuer Wert"
+                [(value)]="value"></app-text-input>
 
 <button (click)="elements.push(value)">Add Element</button>
 
