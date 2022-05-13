@@ -4,8 +4,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
-import { ListItemComponent } from './list-item/list-item.component';
-import { TextInputComponent } from './text-input/text-input.component';
+import {ListItemComponent} from './list-item/list-item.component';
+import {TextInputComponent} from './text-input/text-input.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TextInputComponent } from './text-input/text-input.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
