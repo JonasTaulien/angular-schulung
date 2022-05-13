@@ -20,8 +20,8 @@
 
 <ol>
   <li *ngFor="let element of elements">
-    {{element}}
-    <button (click)="deleteElement(element)">X</button>
+    <app-list-item [text]="element"
+                   (deleted)="deleteElement($event)"></app-list-item>
   </li>
 </ol>
 

@@ -1,0 +1,8 @@
+<div class="list-item">
+  <span class="list-item__text">{{ text }}</span>
+
+  <button class="list-item__delete-button"
+          (click)="deleted.emit(text)">
+    Löschen
+  </button>
+</div>

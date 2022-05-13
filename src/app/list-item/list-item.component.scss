@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.list-item {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.list-item__text {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.list-item__delete-button {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 16px;
+}
