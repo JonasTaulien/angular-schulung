@@ -10,6 +10,14 @@ export class ListItemComponent {
   @Input()
   public text: string | undefined = undefined;
 
+  private _anotherInput: number = 2;
+
+  @Input()
+  set anotherInput(newAnotherInput: number){
+    this._anotherInput = newAnotherInput;
+    console.log("Neuer input " + newAnotherInput)
+  }
+
   @Output()
   public deleted: EventEmitter<string> = new EventEmitter<string>();
 

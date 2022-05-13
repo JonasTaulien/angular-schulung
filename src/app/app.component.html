@@ -21,6 +21,7 @@
 <ol>
   <li *ngFor="let element of elements">
     <app-list-item [text]="element"
+                   [anotherInput]="678234"
                    (deleted)="deleteElement($event)"></app-list-item>
   </li>
 </ol>
