@@ -22,4 +22,47 @@
   </li>
 </ol>
 
+Navigation:
+<ul class="nav">
+  <li>
+    <a class="nav__item"
+       routerLink="/"
+       routerLinkActive="nav__item--active"
+       [routerLinkActiveOptions]="{exact: true}">
+      Index
+    </a>
+  </li>
+  <li>
+    <a class="nav__item"
+       routerLink="/first"
+       routerLinkActive="nav__item--active">
+      First
+    </a>
+  </li>
+  <li>
+    <a class="nav__item"
+       routerLink="/first/sub-1"
+       routerLinkActive="nav__item--active">
+      First Sub 1
+    </a>
+  </li>
+  <li>
+    <a class="nav__item"
+       routerLink="/second"
+       routerLinkActive="nav__item--active"
+       [routerLinkActiveOptions]="{exact: true}">
+      Second
+    </a>
+  </li>
+  <li>
+    <a class="nav__item"
+       routerLink="/third"
+       routerLinkActive="nav__item--active"
+       [routerLinkActiveOptions]="{exact: true}">
+      Third
+    </a>
+  </li>
+</ul>
+
+Content:
 <router-outlet></router-outlet>

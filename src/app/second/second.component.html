@@ -1,0 +1,23 @@
+<p>Second!</p>
+
+Datasources:
+<ul class="nav">
+  <li>
+    <a routerLink="."
+       [queryParams]="{datasourceId: 5}">
+      Datasource 5
+    </a>
+  </li>
+  <li>
+    <a routerLink="."
+       [queryParams]="{datasourceId: 6}">
+      Datasource 6
+    </a>
+  </li>
+</ul>
+
+
+<div *ngIf="datasource$ | async">
+  Status of datasource with id {{ (datasource$ | async)?.datasourceId }}
+  is: {{ (datasource$ | async)?.status |  lowercase | fancy }}
+</div>
