@@ -1,0 +1,59 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <label>
+    Dein Name:
+    <input type="text"
+           formControlName="name">
+  </label>
+
+  <br>
+
+  <label>
+    Deine E-Mail Adresse:
+    <input type="email"
+           formControlName="email">
+  </label>
+
+  <br>
+
+  <label>
+    Dein Team-Name
+    <input type="text"
+           formControlName="teamName">
+  </label>
+
+  <br>
+
+  <label>
+    Dein Geburtstag
+    <input type="date"
+           formControlName="birthDate">
+  </label>
+
+
+  <br>
+
+
+  <label>
+    Wähle aus:
+    <app-custom-input
+      formControlName="custom">
+    </app-custom-input>
+  </label>
+
+  <br>
+
+  <button type="submit"
+          [disabled]="!registerForm.valid">
+    Abschicken!
+  </button>
+</form>
+
+Value : {{registerForm.value | json}}
+
+<ul>
+  Errors:
+  <li *ngFor="let controlName of Object.keys(registerForm.controls)">
+    {{controlName}}: {{ registerForm.get(controlName)?.errors | json }}
+  </li>
+</ul>
+
