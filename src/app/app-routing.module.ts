@@ -7,6 +7,7 @@ import {IndexComponent} from "./index/index.component";
 import {SubFirstComponent} from "./first/sub-first/sub-first.component";
 import {SubSecondComponent} from "./first/sub-second/sub-second.component";
 import {IsAdminGuard} from "./is-admin.guard";
+import {ExtraComponent} from "./extra/extra.component";
 
 const routes: Routes = [
   {
@@ -25,6 +26,7 @@ const routes: Routes = [
     ]
   },
   {path: 'second', component: SecondComponent},
+  {path: 'extra', component: ExtraComponent},
   {path: 'third', redirectTo: '/first', pathMatch: 'full'},
   {path: '', component: IndexComponent},
   {path: '**', component: NotFoundComponent}

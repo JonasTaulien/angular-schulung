@@ -16,6 +16,8 @@ import { SubSecondComponent } from './first/sub-second/sub-second.component';
 import { FancyPipe } from './fancy.pipe';
 import { FormComponent } from './form/form.component';
 import { CustomInputComponent } from './form/custom-input/custom-input.component';
+import { ModalComponent } from './modal/modal.component';
+import { ExtraComponent } from './extra/extra.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CustomInputComponent } from './form/custom-input/custom-input.component
     SubSecondComponent,
     FancyPipe,
     FormComponent,
-    CustomInputComponent
+    CustomInputComponent,
+    ModalComponent,
+    ExtraComponent
   ],
   imports: [
     BrowserModule,

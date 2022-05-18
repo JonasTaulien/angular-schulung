@@ -1,0 +1,16 @@
+<div class="modal"
+     *ngIf="shouldShow"
+     (click)="shouldShow = false;">
+  <div class="modal__dialog"
+       (click)="$event.stopPropagation()"
+       [class.modal__dialog--fancy]="fancy">
+    <h2 class="modal__title"
+        #title>
+      <ng-content select="[title]"></ng-content>
+    </h2>
+
+    <p class="modal__text">
+      <ng-content select="[text]"></ng-content>
+    </p>
+  </div>
+</div>
